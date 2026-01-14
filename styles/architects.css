@@ -75,6 +75,7 @@ main > section {
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
 }
+
 .out-features {
   max-width: 537px;
 }
@@ -107,6 +108,12 @@ main > section {
   font-size: 1rem;
   font-weight: normal;
   line-height: 26px;
+  columns: #727272;
+}
+/* feature section related style */
+#feature-section-title{
+  border-left: 5px solid #FF900E;
+  padding-left: 21px;
 }
 .fact-container {
   display: grid;
@@ -121,8 +128,43 @@ main > section {
   align-items: center;
   text-align: center;
 }
+.card{
+  padding: 30px;
+  border-radius: 8px;
+  margin-top: 30px;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+.card-title{
+  font-size: 1.25rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: 600;
+  color: #131313;
+}
+.features{
+  gap: 140px;
+}
+
+
+#experience-base{
+  padding: 45px;
+  margin-left: -100px;
+  margin-top: -100px;
+}
+
 .icon {
   margin-top: 45px;
+}
+.experience-year{
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 70px;
+  
+}
+.another-word{
+  font-size: 1.5rem;
+  font-weight:500px;
+  line-height: 40px;
 }
 .fact-number {
   font-size: 2.8rem;
@@ -152,6 +194,9 @@ main > section {
 .sponsar-companies {
   filter: grayscale(100%);
 }
+.image{
+  width: 100%;
+}
 @media screen and (max-width: 576px) {
   .display-flex,
   .teams {
@@ -171,14 +216,26 @@ main > section {
     justify-items: center;
     gap: 50px;
   }
+    #experience-base {
+      
+      margin-left: 20px;
+      margin-top: 20px;
+    }
+   
+    
 }
 @media screen and (min-width: 576px) and (max-width: 992px) {
-  .teams {
+  .teams,.features {
     flex-direction: column;
   }
   .fact-container ,.sponsar-companies{
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
   }
+        #experience-base {
+    
+          margin-left: 20px;
+          margin-top: 20px;
+        }
    
 }
