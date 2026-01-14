@@ -55,11 +55,62 @@ body {
   border-radius: 8px;
   border: none;
 }
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+main > section{
+    margin-top: 130px;
+}
 .banner-image{
     width: 100%;
+   
+}
+.teams{
+    display: flex;
+    align-items: center;
+    gap: 73px;
+}
+.team-image-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.out-features{
+    max-width: 537px;
+}
+#Quick-list{
+ font-size: 3rem;
+ font-weight: 500;
+ color: #727272;
+}
+.feature-title{
+    font-size: 3rem;
+        font-weight: bold;
+        color: #131313;
+}
+#Quick-list {
+    font-size: 3rem;
+    font-weight: 500;
+    color: #727272;
+}
+#Features {
+    font-size: 3rem;
+    color: #FF900E;
+}
+.features-descroption{
+    font-size: 1rem;
+    font-weight:normal ;
+    line-height: 26px;
 }
 @media screen and (max-width:576px){
-    .display-flex {
+    .display-flex,
+    .teams {
         flex-direction: column;
     }
+        .team-image-container {
+            
+            grid-template-columns: repeat(1, 1fr);
+          
+        }
 }
