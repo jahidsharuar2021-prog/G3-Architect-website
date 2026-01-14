@@ -1,3 +1,9 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 body {
@@ -136,7 +142,7 @@ main > section {
 }
 .card-title{
   font-size: 1.25rem;
-  margin-top: 0px;
+  margin-top: 0px auto;
   margin-bottom: 0px;
   font-weight: 600;
   color: #131313;
@@ -197,6 +203,23 @@ main > section {
 .image{
   width: 100%;
 }
+footer{
+  margin-top: 130px;
+  margin-bottom:216px ;
+}
+ .footer-section {
+ 
+  max-width: 1440px;
+  margin: 10px auto;
+  border-radius: 8px;
+  background-color: #FFF4E7;
+}
+ .footer-section p{
+  padding:38px 410px 38px 410px;
+  font-size: 1.25rem;
+  color: #424242;
+ }
+
 @media screen and (max-width: 576px) {
   .display-flex,
   .teams {
@@ -221,8 +244,9 @@ main > section {
       margin-left: 20px;
       margin-top: 20px;
     }
-   
-    
+     .footer-section p {
+       padding: 0px;
+     }
 }
 @media screen and (min-width: 576px) and (max-width: 992px) {
   .teams,.features {
