@@ -246,6 +246,7 @@ footer{
     }
      .footer-section p {
        padding: 0px;
+       text-align: center;
      }
 }
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -261,5 +262,9 @@ footer{
           margin-left: 20px;
           margin-top: 20px;
         }
+                 .footer-section p {
+                   padding: 0px;
+                    text-align: center;
+                 }
    
 }
